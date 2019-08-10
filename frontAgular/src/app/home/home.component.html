@@ -1,0 +1,13 @@
+<mat-card *ngIf="!isAuthenticated">
+  <mat-card-content>
+    <button mat-raised-button color="accent" *ngIf="!isAuthenticated"
+            (click)="oktaAuth.loginRedirect()">Login Aouth
+    </button>
+  </mat-card-content>
+</mat-card>
+<mat-card *ngIf="isAuthenticated">
+  <mat-card-content>
+    <button mat-raised-button color="accent" *ngIf="isAuthenticated"
+           [routerLink]="['/mobile-list']">Lista de celulares</button>
+  </mat-card-content>
+</mat-card>

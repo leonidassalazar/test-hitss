@@ -1,0 +1,11 @@
+security:
+    oauth2:
+        client:
+            access-token-uri: https://dev-671057.okta.com/oauth2/default/v1/token
+            user-authorization-uri: https://dev-671057.okta.com/oauth2/default/v1/authorize
+            client-id: 0oa13dkn0c1AeoQCm357
+            scope: salazar.leonidas@gmail.com
+        resource:
+            user-info-uri: https://dev-671057.okta.com/oauth2/default/v1/userinfo
+            token-info-uri: https://dev-671057.okta.com/oauth2/default/v1/introspect
+            prefer-token-info: false

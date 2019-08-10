@@ -1,0 +1,39 @@
+<mat-card>
+  <form #mobileForm="ngForm" (ngSubmit)="save(mobileForm.value)">
+    <mat-card-header>
+      <mat-card-title><h2>{{mobile.model ? 'Editar' : 'Adicionar'}} celular</h2></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <input type="hidden" name="id" [(ngModel)]="mobile.id">
+      <mat-form-field>
+        <input matInput placeholder="Photo" [(ngModel)]="mobile.photo" required name="photo" #photo>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Modelo" [(ngModel)]="mobile.model" required name="model" #model>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput digitOnly type="text" placeholder="Preço" [(ngModel)]="mobile.price" required name="price" #price>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Fabricate" [(ngModel)]="mobile.brand" required name="brand" #brand>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput type="date" placeholder="Data de lançamento" [(ngModel)]="mobile.date" required name="date" #date>
+      </mat-form-field>
+      <br/>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit"
+              [disabled]="!mobileForm.form.valid">Salvar</button>
+      <button mat-raised-button color="secondary" (click)="remove(mobile.id)"
+              *ngIf="mobile.id" type="button">Delete</button>
+      <a mat-button routerLink="/mobile-list">Cancelar</a>
+    </mat-card-actions>
+    <mat-card-footer>
+    </mat-card-footer>
+  </form>
+</mat-card>

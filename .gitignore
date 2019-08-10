@@ -1,0 +1,79 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+frontAgular/dist
+frontAgular/tmp
+frontAgular/out-tsc
+# Only exists if Bazel was run
+frontAgular/bazel-out
+
+# dependencies
+frontAgular/node_modules
+
+# profiling files
+frontAgular/chrome-profiler-events*.json
+frontAgular/speed-measure-plugin*.json
+
+# IDEs and editors
+frontAgular/.idea
+frontAgular/.project
+frontAgular/.classpath
+frontAgular/.c9/
+frontAgular/*.launch
+frontAgular/.settings/
+frontAgular/*.sublime-workspace
+
+# IDE - VSCode
+frontAgular/.vscode/*
+!/frontAgular/.vscode/settings.json
+!/frontAgular/.vscode/tasks.json
+!/frontAgular/.vscode/launch.json
+!/frontAgular/.vscode/extensions.json
+frontAgular/.history/*
+
+# misc
+frontAgular/.sass-cache
+frontAgular/connect.lock
+frontAgular/coverage
+frontAgular/libpeerconnection.log
+frontAgular/npm-debug.log
+frontAgular/yarn-error.log
+frontAgular/testem.log
+frontAgular/typings
+
+# System Files
+frontAgular/.DS_Store
+frontAgular/Thumbs.db
